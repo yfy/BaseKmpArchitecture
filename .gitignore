@@ -19,7 +19,8 @@ output-metadata.json
 
 # IntelliJ
 *.iml
-.idea/
+.idea/*
+!.idea/icon.png
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
