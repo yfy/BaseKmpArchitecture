@@ -9,6 +9,7 @@ presentation state machine) with **fully native UI** — Jetpack Compose on Andr
 The groundwork is already in place; start from your own screens and business logic.
 
 <p align="center">
+  <a href="https://github.com/yfy/BaseKmpArchitecture/actions/workflows/ci.yml"><img src="https://github.com/yfy/BaseKmpArchitecture/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI" /></a>
   <img src="https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyfy%2FBaseKmpArchitecture%2Fmain%2Fgradle%2Flibs.versions.toml&query=%24.versions.kotlin&label=Kotlin&color=7F52FF&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-3DDC84" alt="Platforms" />
   <img src="https://img.shields.io/badge/UI-Compose%20%2B%20SwiftUI-blue" alt="UI" />
