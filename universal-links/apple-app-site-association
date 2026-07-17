@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.yfy.kmp.iosApp1"],
+        "components": [
+          { "/": "/login" },
+          { "/": "/signup" },
+          { "/": "/forgot-password" },
+          { "/": "/email-verify/*" },
+          { "/": "/reset-password/*" },
+          { "/": "/home" },
+          { "/": "/profile/*" },
+          { "/": "/settings" }
+        ]
+      }
+    ]
+  }
+}

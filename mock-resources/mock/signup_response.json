@@ -1,0 +1,10 @@
+{
+  "id": "u_2002",
+  "username": "newuser",
+  "email": "new@yfy.dev",
+  "displayName": "Yeni Kullanıcı",
+  "isVerified": false,
+  "isPremium": false,
+  "accessToken": "mock-access-token-u_2002",
+  "refreshToken": "mock-refresh-token-u_2002"
+}

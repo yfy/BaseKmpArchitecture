@@ -1,0 +1,20 @@
+{
+  "_comment": "Single source of truth for design colors. Run ./gradlew generateDesignTokens to regenerate Android (DesignTokens.kt) + iOS (DesignTokens.swift). Values are RGB hex without '#'.",
+  "colors": {
+    "primary":        { "light": "1565C0", "dark": "5B9BE8" },
+    "onboardingBg":   { "light": "4F9D9A", "dark": "4F9D9A" },
+    "background":     { "light": "FFFFFF", "dark": "101418" },
+    "surface":        { "light": "F7F9FC", "dark": "1B2027" },
+    "gradientTop":    { "light": "DCEBF7", "dark": "15212B" },
+    "gradientBottom": { "light": "FFFFFF", "dark": "101418" },
+    "textPrimary":    { "light": "1A1A1A", "dark": "E6E8EB" },
+    "textSecondary":  { "light": "6B7280", "dark": "9AA3AD" },
+    "fieldBorder":    { "light": "D1D5DB", "dark": "3A424C" },
+    "fieldBg":        { "light": "F7F9FC", "dark": "1B2027" },
+    "socialGoogleBg":     { "light": "FFFFFF", "dark": "131314" },
+    "socialGoogleText":   { "light": "1F1F1F", "dark": "E3E3E3" },
+    "socialGoogleBorder": { "light": "747775", "dark": "8E918F" },
+    "socialAppleBg":      { "light": "000000", "dark": "FFFFFF" },
+    "socialAppleText":    { "light": "FFFFFF", "dark": "000000" }
+  }
+}

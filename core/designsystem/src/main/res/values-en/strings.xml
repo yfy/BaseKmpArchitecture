@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_back">Back</string>
+    <string name="a11y_toggle_password">Show or hide password</string>
+</resources>

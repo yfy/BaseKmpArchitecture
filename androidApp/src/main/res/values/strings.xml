@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KMP Base</string>
+
+    <string name="field_email">Email</string>
+    <string name="field_password">Şifre</string>
+    <string name="field_password_confirm">Şifre (tekrar)</string>
+    <string name="field_first_name">Ad</string>
+    <string name="field_last_name">Soyad</string>
+
+    <string name="error_email_format">Geçerli bir e-posta girin</string>
+    <string name="error_password_too_short">Şifre en az 4 karakter olmalı</string>
+    <string name="error_invalid_credentials">E-posta veya şifre hatalı</string>
+    <string name="error_network">Ağ bağlantısı kurulamadı</string>
+    <string name="error_offline">İnternet bağlantısı yok</string>
+    <string name="error_timeout">İstek zaman aşımına uğradı</string>
+    <string name="error_server">Sunucu hatası, tekrar deneyin</string>
+    <string name="error_unknown">Beklenmeyen bir hata oluştu</string>
+    <string name="error_name_required">Ad ve soyad zorunlu</string>
+    <string name="error_password_mismatch">Şifreler eşleşmiyor</string>
+    <string name="error_email_taken">Bu e-posta zaten kullanımda</string>
+    <string name="error_code_format">Kod 6 haneli olmalı</string>
+    <string name="error_invalid_code">Kod hatalı</string>
+    <string name="error_unauthorized">Oturum süresi doldu, tekrar giriş yapın</string>
+
+    <string name="action_confirm">Evet</string>
+    <string name="action_cancel">Vazgeç</string>
+
+    <string name="login_title">Giriş</string>
+    <string name="login_submit">Giriş yap</string>
+    <string name="login_go_signup">Hesap oluştur</string>
+    <string name="login_go_forgot">Şifremi unuttum</string>
+    <string name="login_welcome">Hoş geldin, %1$s</string>
+
+    <string name="brand_name">yfy</string>
+    <string name="login_welcome_title">Hoş Geldiniz</string>
+    <string name="login_welcome_subtitle">Devam etmek için giriş yapın.</string>
+    <string name="remember_me">Beni hatırla</string>
+    <string name="or_divider">veya</string>
+    <string name="google_sign_in">Google ile Giriş</string>
+    <string name="continue_with_google">Google ile devam et</string>
+    <string name="continue_with_apple">Apple ile devam et</string>
+    <string name="continue_with_instagram">Instagram ile devam et</string>
+    <string name="login_no_account">Hesabın yok mu?</string>
+    <string name="login_link">Giriş yap</string>
+
+    <string name="signup_link">Kayıt ol</string>
+    <string name="signup_have_account">Zaten hesabın var mı?</string>
+    <string name="terms_accept_prefix">"Kabul ediyorum: "</string>
+    <string name="terms_of_service">Kullanım Koşulları</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="terms_and">" ve "</string>
+    <string name="common_ok">Tamam</string>
+    <string name="legal_terms_body">Bu, Kullanım Koşulları için yer tutucu bir metindir. Yayın öncesi gerçek koşullar buraya eklenecektir.</string>
+    <string name="legal_privacy_body">Bu, Gizlilik Politikası için yer tutucu bir metindir. Yayın öncesi gerçek politika buraya eklenecektir.</string>
+
+    <string name="signup_title">Hesap oluştur</string>
+    <string name="signup_submit">Kayıt ol</string>
+
+    <string name="forgot_title">Şifremi unuttum</string>
+    <string name="forgot_submit">Sıfırlama bağlantısı gönder</string>
+    <string name="forgot_sent">Sıfırlama bağlantısı e-postana gönderildi</string>
+
+    <string name="verify_title">E-posta doğrula</string>
+    <string name="verify_code_label">6 haneli kod</string>
+    <string name="verify_submit">Doğrula</string>
+
+    <string name="home_title">Ana sayfa</string>
+    <string name="home_success">Giriş başarılı 🎉</string>
+    <string name="home_profile">Profil</string>
+    <string name="home_devtools">UI Demo</string>
+    <string name="home_logout">Çıkış yap</string>
+    <string name="ads_show_interstitial">Geçiş reklamı göster</string>
+    <string name="ads_show_rewarded">Ödüllü reklam göster</string>
+    <string name="ads_reward_earned">%1$d ödül kazandın 🎁</string>
+    <string name="ads_not_ready">Reklam henüz hazır değil</string>
+
+    <string name="devtools_title">UI Demo</string>
+    <string name="devtools_show_info">Bilgi toast</string>
+    <string name="devtools_show_success">Başarı toast</string>
+    <string name="devtools_show_error">Hata toast</string>
+    <string name="devtools_show_dialog">Dialog göster</string>
+    <string name="devtools_show_loader">Yükleyici (3 sn)</string>
+    <string name="devtools_info_msg">Bu bir bilgi mesajı</string>
+    <string name="devtools_success_msg">İşlem başarılı</string>
+    <string name="devtools_error_msg">Bir hata oluştu</string>
+    <string name="devtools_dialog_title">Örnek dialog</string>
+    <string name="devtools_dialog_message">Bu bir örnek dialog mesajıdır.</string>
+    <string name="logout_confirm_title">Çıkış yap</string>
+    <string name="logout_confirm_message">Çıkış yapmak istediğine emin misin?</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="profile_premium">Premium üye</string>
+    <string name="profile_member">Standart üye</string>
+    <string name="profile_verified">Doğrulanmış</string>
+    <string name="profile_account">Hesap bilgileri</string>
+    <string name="profile_username">Kullanıcı adı</string>
+    <string name="profile_not_found">Kullanıcı bulunamadı</string>
+    <string name="profile_settings">Ayarlar</string>
+    <string name="profile_go_premium">Premium\'a Geç</string>
+
+    <string name="paywall_title">Premium</string>
+    <string name="paywall_subtitle">Tüm özelliklerin kilidini aç</string>
+    <string name="paywall_purchase">Satın Al</string>
+    <string name="paywall_restore">Satın alımları geri yükle</string>
+    <string name="paywall_purchased">Premium aktif 🎉</string>
+    <string name="paywall_failed">Satın alma başarısız</string>
+
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_dark_mode">Karanlık mod</string>
+    <string name="settings_notifications">Bildirimler</string>
+    <string name="settings_theme">Tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="settings_language">Dil</string>
+    <string name="language_system">Sistem</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="settings_about">Hakkında</string>
+    <string name="settings_version">Sürüm</string>
+
+    <string name="field_current_password">Mevcut şifre</string>
+    <string name="field_new_password">Yeni şifre</string>
+    <string name="error_wrong_current">Mevcut şifre hatalı</string>
+    <string name="error_invalid_token">Bağlantı geçersiz veya süresi dolmuş</string>
+
+    <string name="change_password_title">Şifre değiştir</string>
+    <string name="change_password_submit">Güncelle</string>
+    <string name="change_password_success">Şifre güncellendi</string>
+
+    <string name="reset_password_title">Şifre sıfırla</string>
+    <string name="reset_password_submit">Sıfırla</string>
+    <string name="reset_password_success">Şifre sıfırlandı</string>
+
+    <string name="two_factor_title">İki adımlı doğrulama</string>
+    <string name="two_factor_status_on">Etkin</string>
+    <string name="two_factor_status_off">Devre dışı</string>
+    <string name="two_factor_enable">Etkinleştir</string>
+    <string name="two_factor_disable">Devre dışı bırak</string>
+    <string name="two_factor_secret_label">Gizli anahtar</string>
+    <string name="two_factor_code_hint">Doğrulama kodu (6 hane)</string>
+    <string name="two_factor_verify">Doğrula</string>
+    <string name="two_factor_desc">Hesabınızı ek bir doğrulama adımıyla koruyun.</string>
+
+    <string name="onboarding_page1_title">Hoş Geldiniz</string>
+    <string name="onboarding_page1_desc">İhtiyacınız olan her şey tek bir uygulamada</string>
+    <string name="onboarding_page2_title">Hızlı ve Kolay</string>
+    <string name="onboarding_page2_desc">Aradığınıza saniyeler içinde ulaşın</string>
+    <string name="onboarding_page3_title">Güvende</string>
+    <string name="onboarding_page3_desc">Verileriniz güvenle saklanır, kontrol sizde</string>
+    <string name="onboarding_progress">%1$d / %2$d</string>
+    <string name="onboarding_start">Başla</string>
+    <string name="onboarding_next">İleri</string>
+    <string name="onboarding_skip">Atla</string>
+</resources>

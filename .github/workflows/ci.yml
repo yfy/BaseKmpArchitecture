@@ -1,0 +1,84 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-test:
+    # macOS runner: ships both the Android SDK and the Xcode / Kotlin-Native toolchain (required for iOS).
+    runs-on: macos-14
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # Synchronized groups (pbxproj objectVersion 71) + SKIE Swift generation require Xcode 16.
+      - name: Select Xcode 16
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16.2'
+
+      # Cache the Kotlin/Native toolchain and dependencies — big speedup for the iOS framework + tests.
+      - name: Cache Kotlin/Native (~/.konan)
+        uses: actions/cache@v4
+        with:
+          path: ~/.konan
+          key: konan-${{ runner.os }}-${{ hashFiles('gradle/libs.versions.toml', 'gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: konan-${{ runner.os }}-
+
+      # Cache resolved Swift Packages (Firebase, RevenueCat) for the iOS app build.
+      - name: Cache SwiftPM
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/org.swift.swiftpm
+          key: swiftpm-${{ runner.os }}-${{ hashFiles('iosApp/iosApp.xcodeproj/project.pbxproj') }}
+          restore-keys: swiftpm-${{ runner.os }}-
+
+      - name: Architecture tests (Konsist)
+        run: ./gradlew :arch-test:test
+
+      - name: Android unit tests
+        run: ./gradlew testDebugUnitTest
+
+      - name: iOS unit tests (iosSimulatorArm64)
+        run: ./gradlew iosSimulatorArm64Test
+
+      # Compiles SwiftUI + the SKIE bridge + synchronized groups + the DesignSystem Swift Package.
+      - name: iOS app build (xcodebuild)
+        run: |
+          xcodebuild -project iosApp/iosApp.xcodeproj -scheme iosApp \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            build CODE_SIGNING_ALLOWED=NO
+
+      - name: Android APK (mock flavor)
+        run: ./gradlew :androidApp:assembleMockDebug
+
+      - name: Upload APK artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-mock-debug
+          path: '**/build/outputs/apk/**/*.apk'
+          if-no-files-found: ignore
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: '**/build/reports/tests/**'
+          if-no-files-found: ignore

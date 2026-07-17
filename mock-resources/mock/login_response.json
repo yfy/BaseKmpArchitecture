@@ -1,0 +1,10 @@
+{
+  "id": "u_1001",
+  "username": "yfy",
+  "email": "demo@yfy.dev",
+  "displayName": "YFY YFY",
+  "isVerified": true,
+  "isPremium": false,
+  "accessToken": "mock-access-token-u_1001",
+  "refreshToken": "mock-refresh-token-u_1001"
+}
